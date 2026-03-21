@@ -16,7 +16,7 @@ def KMeans_custome(p, u, k):
     iteration = 1
 
     while True:
-        print(f"\n################ VÒNG LẶP {iteration} ################")
+        print(f"\n===== VÒNG LẶP {iteration} ======")
         matrix_show = np.zeros((len(p), len(u)))
 
         print("===== Bước 03: Gán điểm dữ liệu ==========")
@@ -72,7 +72,6 @@ def KMeans_custome(p, u, k):
             print("==> Chưa hội tụ, tiếp tục lặp...")
             u = [new_u1, new_u2, new_u3]
             iteration += 1
-
 
 if __name__ == "__main__":
     p1 = [2.1, 3.1, 1.6]
